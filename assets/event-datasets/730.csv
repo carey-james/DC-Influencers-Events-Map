@@ -1,4 +1,4 @@
-date,event-name,location-name,location-address,lat,long
+date,event_name,location_name,location_address,lat,long
 07/08/24,BBQ King,Blues Alley,1073 Wisconsin Ave. NW,38.904668142521565,-77.06260443588764
 07/08/2024,Nats host NATO day,Nationals Park,1500 South Capitol St SE,38.87262613091461,-77.00742052712249
 07/08/2024,Adult Summer Camp,relume,760 C St SE,38.88614210523277,-76.99536235432295

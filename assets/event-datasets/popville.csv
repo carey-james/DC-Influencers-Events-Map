@@ -1,4 +1,4 @@
-date,event-name,location-name,location-address,lat,long
+date,event_name,location_name,location_address,lat,long
 07/01/2024,Supreme Court Term in Review,Georgetown Law,500 First St NW,38.89635124050028,-77.01242208380614
 07/01/2024,Book Talk: Elizabeth Dias,Politics & Prose,5015 Connecticut Ave NW,38.955440112836484,-77.06973113063496
 07/01/2024,Copa America Watch Party,Johnny Pistolas,2333 18th St NW,38.92047994483284,-77.04175707331659

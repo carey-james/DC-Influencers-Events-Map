@@ -1,10 +1,23 @@
 function addEventDots(eventDataset, eventColor, eventMap) {
+	var eventList = {};
 	eventDataset.forEach((d) => {
+		if (eventList[`${d.lat}, ${d.long}`]) {
+			eventList[`${d.lat}, ${d.long}`].count = eventList[`${d.lat}, ${d.long}`].count + 1;
+		} else {
+			eventList[`${d.lat}, ${d.long}`] = {
+				lat: d.lat,
+				long: d.long,
+				name: d.location_name,
+				count: 1
+			};
+		}
+	});
+	eventList.forEach((d) => {
 		var circle = L.circle([d.lat, d.long], {
 			color: eventColor,
 			fillColor: eventColor,
 			fillOpacity: 0.5,
-			radius: 50
+			radius: (50 * d.count)
 		}).addTo(eventMap);
 	});
 }

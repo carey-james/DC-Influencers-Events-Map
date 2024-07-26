@@ -1,4 +1,4 @@
-date,event-name,location-name,location-address,lat,long
+date,event_name,location_name,location_address,lat,long
 07/03/2024,Nats Fireworks,Nationals Park,1500 South Capitol St SE,38.87262613091461,-77.00742052712249
 07/04/2024,July 4th Parade,Constitution Ave,7th St & Constitution Ave NW,38.89222262774588,-77.02171584221017
 07/04/2024,Capitol Concert,US Capitol,US Capitol,38.889896769855554,-77.00851658798335

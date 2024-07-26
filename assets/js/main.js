@@ -30,6 +30,7 @@ async function initMap() {
 	const data_730 = await d3.csv("https://raw.githubusercontent.com/carey-james/DC-Influencers-Events-Map/main/assets/event-datasets/730.csv");
 	const data_yourdcbestie = await d3.csv("https://raw.githubusercontent.com/carey-james/DC-Influencers-Events-Map/main/assets/event-datasets/yourdcbestie.csv");
 	const data_popville = await d3.csv("https://raw.githubusercontent.com/carey-james/DC-Influencers-Events-Map/main/assets/event-datasets/popville.csv");
+	const data_clockout = await d3.csv("https://raw.githubusercontent.com/carey-james/DC-Influencers-Events-Map/main/assets/event-datasets/clockout.csv");
 
 	var map = L.map('map').setView([38.89,-77.03], 12);
 	
@@ -43,6 +44,7 @@ async function initMap() {
 	addEventDots(data_730, 'red', map);
 	addEventDots(data_yourdcbestie, 'blue', map);
 	addEventDots(data_popville, 'limegreen', map);
+	addEventDots(data_clockout, 'orange', map);
 }
 
 

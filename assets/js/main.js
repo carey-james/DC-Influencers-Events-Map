@@ -12,12 +12,12 @@ function addEventDots(eventDataset, eventColor, eventMap) {
 			};
 		}
 	});
-	eventList.forEach((d) => {
-		var circle = L.circle([d.lat, d.long], {
+	_.each(eventList, (v,k) => {
+		var circle = L.circle([v.lat, v.long], {
 			color: eventColor,
 			fillColor: eventColor,
 			fillOpacity: 0.5,
-			radius: (50 * d.count)
+			radius: (50 * v.count)
 		}).addTo(eventMap);
 	});
 }

@@ -15,6 +15,7 @@ async function initMap() {
 	// Get the events info from the event data files
 	const data_730 = await d3.csv("https://raw.githubusercontent.com/carey-james/DC-Influencers-Events-Map/main/assets/event-datasets/730.csv");
 	const data_yourdcbestie = await d3.csv("https://raw.githubusercontent.com/carey-james/DC-Influencers-Events-Map/main/assets/event-datasets/yourdcbestie.csv");
+	const data_popville = await d3.csv("https://raw.githubusercontent.com/carey-james/DC-Influencers-Events-Map/main/assets/event-datasets/popville.csv");
 
 	var map = L.map('map').setView([38.89,-77.03], 13);
 	
@@ -27,6 +28,7 @@ async function initMap() {
 
 	addEventDots(data_730, 'red', map);
 	addEventDots(data_yourdcbestie, 'blue', map);
+	addEventDots(data_popville, 'green', map);
 }
 
 

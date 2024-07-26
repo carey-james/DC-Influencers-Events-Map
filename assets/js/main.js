@@ -16,7 +16,7 @@ async function initMap() {
 	const data_730 = await d3.csv("https://raw.githubusercontent.com/carey-james/DC-Influencers-Events-Map/main/assets/event-datasets/730.csv");
 	const data_yourdcbestie = await d3.csv("https://raw.githubusercontent.com/carey-james/DC-Influencers-Events-Map/main/assets/event-datasets/yourdcbestie.csv");
 
-	var map = L.map('map').setView([38.89,-77.03], 12);
+	var map = L.map('map').setView([38.89,-77.03], 14);
 	
 	L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.{ext}', {
     	minZoom: 10,

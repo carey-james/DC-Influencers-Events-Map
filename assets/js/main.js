@@ -17,7 +17,7 @@ function addEventDots(eventDataset, eventColor, eventMap) {
 			color: eventColor,
 			fillColor: eventColor,
 			fillOpacity: 0.5,
-			radius: (50 * v.count)
+			radius: (45 + (5 * v.count))
 		}).addTo(eventMap);
 	});
 }
